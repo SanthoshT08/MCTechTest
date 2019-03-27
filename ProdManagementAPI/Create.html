@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container mt-3">
+        <h2>Create</h2>
+        <hr />
+        <label class="text-info" id="lblMessage"></label>
+        <ul id="ulValMessages" class="text-danger"></ul>
+        <div class="form-group">
+            <div class="col-md-8">
+                <label for="tbProdName" class="text-dark">Product Name</label>
+                <input type="text" class="form-control" id="tbProdName" placeholder="Enter Product Name" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-8">
+                <label for="tbProdUrl">Product URL</label>
+                <input type="text" class="form-control" id="tbProdUrl" placeholder="Enter Product Url" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-8">
+                <label for="tbProdCode">Product Code</label>
+                <input type="text" class="form-control" id="tbProdCode" placeholder="Enter Product Code" required />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-8">
+                <button type="button" id="btnCreate" class="btn btn-sm btn-outline-info" onclick="CreateProduct();">Create</button>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-8">
+                <a href="default.html">Back To Products</a>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/Custom/Product.js"></script>
+</body>
+</html>
